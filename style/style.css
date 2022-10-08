@@ -10,7 +10,7 @@
    --vermelho: #6B0103; /* ff0000 6B0103 A30006 F03C02 */ 
    --verde: #A8DBA8;    /* 00ff00 CFF09E A8DBA8 3B8686 */
    --azul: #00B4CC;     /* 0000ff 00DFFC 00B4CC 00B4CC */
-   --branco: #ffffff;
+   --branco: #f10e83;
 }
 
 html {
@@ -113,28 +113,22 @@ a {
 .bordaPreto	   {border-color: #000000;}
 
 
-.imgpac {
-	background-image: url(../img/pac.jpg);
-}
 
-.imgfeliz {
-	background-image: url(../img/feliz.jpg);
-}
 
 .imgsusto {
-	background-image: url(../img/susto.jpg);
+	background-image: url(../img/Sem\ Título-2.jpg);
 }
 
 .moveimg {
 	float: left;
 	position: relative;
 	display: block;
-	width: 210px;
-	height: 157px;
+	width: 260px;
+	height: 332px;
 	text-indent: -9999px;
 	margin: 20px;
 }
 
 .moveimg:hover {
-	background-position: -210px;
+	background-position: -240px;
 }
