@@ -1,82 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-/*
-	font-family: 'Montserrat', sans-serif;
-    google.com/fonts
-*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 :root {
-   --amarelo: #F9D423;  /* F9D423 EDDE45*/ 
-   --vermelho: #6B0103; /* ff0000 6B0103 A30006 F03C02 */ 
-   --verde: #A8DBA8;    /* 00ff00 CFF09E A8DBA8 3B8686 */
-   --azul: #00B4CC;     /* 0000ff 00DFFC 00B4CC 00B4CC */
-   --branco: #f10e83;
+
+--azulescuro: #165394;
+--azultommedio: ##3889E0;
+--azulclaro: #59A9FF;
+--amareloescuro:#946E2D;
+--amrelo: #E0A338;
+--azullogin: #51A1A6;
+--azulbotao: #284E51;
 }
 
 html {
-	font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
 
-li {
-    display: inline;
-    margin-right: 50px;
+body {
+display: block;
+margin: 0px;
+background-color: var(--azulclaro);
+display: flex
 }
 
-li:hover {
-    font-weight: bold;
+#cantologin{
+width: 500px;
+height: 712px;
+margin-top: 0%;
+border-radius: 0px 30px 30px 0px;
+background-color: var(--azulescuro);
+display: flex;
+flex-direction: column;
+}
+
+cantologin{ 
+display: flex;
+justify-content: space-evenly;
+color: #ffffff;
+margin: 0;
+
+}
+
+h1{ 
+display: flex;
+justify-content: space-evenly;
+color: #ffffff;
+margin: 0;
+
+}
+
+cantologin, h4{ 
+display: flex;
+justify-content: space-evenly;
+color: #ffffff;
+margin: 0;
+}
+
+.conteiner{
+	display: flex;
+	width: 49%;
+	height: 200px;
+	position: relative;
+
+
+	margin-top: 14%;
+	background-color: var(--azullogin);
+	display: flex;
+	flex-direction: column;
+	}
+
+
+button{
+border-top: 0px;
+border-bottom: 0px;
+border-radius: 50px;
+width: 100px;
+border: solid 2px var(--azulclaro);
+background-color: transparent;
+margin-left: 70%;
+color: white;
 }
 
 header, footer {
-	width: auto;
-	background: rgba(80,80,80,0.2);
-	line-height: 3em;
+width: auto;
+background: rgba(80,80,80,0.2);
+line-height: 3em;
+
 }
 
+
 header {
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
-	height: 11 0px;
+
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+height: 11 0px;
 }
 
 footer {
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	height: 50px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+height: 50px;
+
 }
 
-header h1, footer h1 {
-	text-align: center;
-	text-shadow: 1px 1px black;
+ul{
+display: flex;
+justify-content: center;
+
 }
 
-#content {
-	width: 100%;
-	height: auto;
-	position: relative;
-	float: left;
+header h1, footer h1, footer p {
+text-align: center;
+
 }
 
-article {
-	margin-top: 10px; 
-	width: 40%;
-	border: 1px dashed var(--vermelho);
-	height: 400px;
-	margin-left: 5%;
-	position: relative;
-	float: left;
+
+.conteiner {
+display: flex;
+width: 92%;
+height: 618px;
+margin-left: 4%;
+position: relative;
+float: left;
+margin-top: 4%;
 }
 
-a {
-    text-decoration: none;
+.h1{
+margin-top: 200px;
 }
 
-.bgBranco	{background-color: var(--branco);}
-.bgAmarelo  {background-color: var(--amarelo);}
+
+.bgVerdeVintage	{background-color: var(--color5);}
+.bgcoloer9  {background-color: var(--color9);}
 .bgAzul     {background-color: var(--azul);}
-.bgVermelho {background-color: var(--vermelho);}
+.bgVerdeClaro {background-color: var(--color3);}
 .bgVerde    {background-color: var(--verde);}
-.bgPreto	{background-color: #000000;}
-.bgFalha    {background-image: url(../img/falha.jpg);}
+.bgAzulAgua	{background-color: var(--color9);}
+.bgFalha    {background-image: url();}
+
 
 .mt-05 		{margin-top: 5px;}
 .mt-10 		{margin-top: 10px;}
@@ -87,48 +148,15 @@ a {
 .mb-15 		{margin-bottom: 15px;}
 
 .pd-05 		{padding: 5px;}
-.pd-10 		{padding: 10px;}
-.pd-15 		{padding: 15px;}
 
 .txtBranco   {color: #ffffff;} 
-.txtAmarelo  {color: var(--amarelo);}
-.txtAzul     {color: var(--azul);}
-.txtVermelho {color: var(--vermelho);}
-.txtVerde    {color: var(--verde);}
 .txtPreto	 {color: #000000;}
 
 .borda-0   {border: none;}
 .borda-1   {border: solid 1px;}
 .borda-2   {border: solid 2px;}
-.borda-3   {border: solid 3px;}
 .borda-r0  {border-radius: 0px;}
 .borda-r5  {border-radius: 5px;}
-.borda-r10 {border-radius: 10px;}
-
-.bordaBranco   {border-color: var(--branco);} 
-.bordaAmarelo  {border-color: var(--amarelo);}
-.bordaAzul     {border-color: var(--azul);}
-.bordaVermelho {border-color: var(--vermelho);}
-.bordaVerde    {border-color: var(--verde);}
-.bordaPreto	   {border-color: #000000;}
+.borda-r10 {border-radius: 20px;}
 
 
-
-
-.imgsusto {
-	background-image: url(../img/Sem\ Título-2.jpg);
-}
-
-.moveimg {
-	float: left;
-	position: relative;
-	display: block;
-	width: 260px;
-	height: 332px;
-	text-indent: -9999px;
-	margin: 20px;
-}
-
-.moveimg:hover {
-	background-position: -240px;
-}
